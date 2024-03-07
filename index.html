@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Expense Tracker</h2>
+      <div class="balance-container">
+        <h3>Balance: <span id="result-balance">0</span></h3>
+        <div class="ex-in-container">
+          <div class="expence">
+            <h4>total expence:</h4>
+            <span class="total-expence">0</span>
+          </div>
+          <div class="income">
+            <h4>total income:</h4>
+            <span class="total-income">0</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="add-balance">
+        <h3>Add New</h3>
+        <div class="form">
+          <label for="entry-type">Entry Type:</label>
+          <select name="entry-type" id="entry-type">
+            <option value="incom">income</option>
+            <option value="expence">expence</option>
+          </select>
+
+          <br />
+
+          <label for="name">Name:</label>
+          <input type="text" id="name" placeholder="Enter expence name ..." />
+
+          <br />
+
+          <label for="amount">Amount:</label>
+          <input
+            type="number"
+            id="amount"
+            placeholder="Enter expence amount ..."
+          />
+
+          <br />
+
+          <button id="add-btn" class="btn">Add Expence</button>
+        </div>
+      </div>
+
+      <div class="expence-table-container">
+        <h3>Expence</h3>
+        <div class="list-container">
+            <div class="list"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./app.js"></script>
+</html>
